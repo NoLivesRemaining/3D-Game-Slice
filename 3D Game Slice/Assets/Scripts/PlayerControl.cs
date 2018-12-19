@@ -6,7 +6,7 @@ public class PlayerControl : MonoBehaviour {
 
     private float turn;
     private float forward;
-    private bool aimDown;
+    private bool aimDown; //Creating variables for player control animations
     private bool aimHold;
     private bool fire;
 
@@ -16,7 +16,7 @@ public class PlayerControl : MonoBehaviour {
 
     private void Start()
     {
-        player = GetComponent<Player>();
+        player = GetComponent<Player>(); //Getting the player script to attach these to
     }
     // Use this for initialization
 
@@ -25,12 +25,12 @@ public class PlayerControl : MonoBehaviour {
         // Get Inputs
         turn = Input.GetAxis("Horizontal");
         forward = Input.GetAxis("Vertical");
-        aimDown = Input.GetMouseButtonDown(1);
+        aimDown = Input.GetMouseButtonDown(1); //Assigning inputs for animations
         aimHold = Input.GetMouseButton(1);
         fire = Input.GetMouseButtonDown(0);
 
 
         player.Move(turn, forward);
-        player.AimFire(aimDown, aimHold, fire);
+        player.AimFire(aimDown, aimHold, fire); //Assigning animations 
     }
 }

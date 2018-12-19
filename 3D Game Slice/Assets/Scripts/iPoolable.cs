@@ -5,6 +5,6 @@ using UnityEngine;
 public interface iPoolable
 {
 
-    void OnObjectPolled();
+    void OnObjectPolled(); //Creating the iPoolable intreface for the pooler
 
 }

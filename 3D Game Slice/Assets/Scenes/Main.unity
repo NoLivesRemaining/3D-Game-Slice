@@ -2119,7 +2119,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 324.8079
+  m_Radius: 485.76447
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!195 &876405143
 NavMeshAgent:
@@ -4304,7 +4304,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 324.8079
+  m_Radius: 485.76447
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!136 &1838578205
 CapsuleCollider:
@@ -4696,7 +4696,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 324.8079
+  m_Radius: 485.76447
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!136 &1976948585
 CapsuleCollider:
