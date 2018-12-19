@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.Events;
 
 public class Player : MonoBehaviour {
+
     private float deltaX;
     private Quaternion spineRotation;
     private bool aim;
@@ -25,7 +26,13 @@ public class Player : MonoBehaviour {
         animator.SetFloat("Forward", forward);
     }
    
-   
+   private void OnTriggerEnter(Collider other)
+    {
+        if(other.gameObject.tag == "Enemy")
+        {
+            animator.SetTrigger("Hit");
+        }
+    }
 
     public void AimFire(bool aimDown, bool aimHold, bool fire)
     {

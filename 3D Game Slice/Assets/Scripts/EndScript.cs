@@ -6,9 +6,11 @@ public class EndScript : MonoBehaviour
 {
     public GameObject GameOverText;
     public bool endReach = false;
+    public GameObject Spawner;
 
     private void Start()
     {
+        Spawner.SetActive(false);
     GameOverText.SetActive(false);
     }
 
@@ -24,7 +26,7 @@ public class EndScript : MonoBehaviour
     {
         if (endReach == true)
         {
-        
+            Spawner.SetActive(true);
             GameOverText.SetActive(true);
         }
     }
